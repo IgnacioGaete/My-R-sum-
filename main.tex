@@ -1,0 +1,189 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{titlesec,titling}
+\usepackage[inline]{enumitem}
+\usepackage[margin=0.7cm]{geometry}
+\usepackage{graphicx,xcolor,fancybox}
+\usepackage[pro]{fontawesome5}
+%\usepackage{imfellEnglish}
+%\usepackage{romande}
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{color-wspicon}{HTML}{075e54}
+\definecolor{color-author}{HTML}{151526}
+\definecolor{color-career}{HTML}{02085c}
+\definecolor{color-briefcase}{HTML}{ab510c}
+\definecolor{color-lightbulb}{HTML}{d4c517}
+\definecolor{color-school}{HTML}{262300}
+\newcommand{\mycareer}{Estudiante Ing. Civil Electrónico}
+\setlength{\parindent}{0cm}
+\cornersize{0.05}
+\setlength{\shadowsize}{1.5pt}
+
+\title{Résumé}
+\author{Ignacio Gaete}
+\date{\today}
+
+\renewcommand{\maketitle}{
+    \hspace*{0.5cm}
+    \ovalbox{
+    \begin{minipage}[b][3cm][b]{2.8cm}
+        \centerline{\includegraphics[width=3cm]{contact_qrcode6.png}}
+    \end{minipage}
+    }
+    \hspace*{0.1cm}
+    %\ovalbox{
+    \begin{minipage}[b][3cm][c]{14cm}
+        \leftline{\Huge{\textbf{\textcolor{color-author}{\theauthor}}}}
+        \vspace*{0.3cm}
+        \leftline{\hspace*{0.2cm}\small{\emph{\textbf{\textcolor{color-career}{\mycareer}}}}}
+        \vspace*{0.4cm}
+        \leftline{\large{\textcolor{color-wspicon}{\Large{\faWhatsapp}}\,+56947073435\quad\textcolor{red}{\faEnvelope[regular]}\,ignacio.agaetez@gmail.com\quad\textcolor{orange}{\faGitlab}\,\href{https://gitlab.com/IgnacioGaete}{@IgnacioGaete}}}
+    \end{minipage}
+    %}
+    \hfill
+}
+
+\titleformat{\section}
+{\LARGE\bfseries\centering}
+{}
+{0cm}
+{}
+[{\titlerule[1.5pt]}]
+
+\titleformat{\subsection}
+{\large\bfseries}
+{\hspace*{0.1cm}\faCaretSquareDown[regular]}
+{0.3cm}
+{}
+[]
+
+\titleformat{\subsubsection}
+{\bfseries}
+{\hspace*{0.4cm}\faCalendar*[regular]}
+{0.3cm}
+{}
+[]
+
+\begin{document}
+\maketitle
+\vspace{1cm}\hfill\\
+\begin{minipage}[t]{0.5\textwidth}
+    \hspace*{0.3cm}
+    \ovalbox{\begin{minipage}[t]{\textwidth}
+    
+    \section{\textcolor{color-briefcase}{\faBriefcase}\quad Experiencia Laboral}
+    
+    \subsection{Cajero de supermercado, Unimarc}
+    
+    \subsubsection{2019-2021}
+    
+    \begin{itemize}
+        \item Atención a clientes.
+        \item Apoyo en supervisión de sala.
+    \end{itemize}
+    
+    \subsection{Tutor académico en CIAC, UTFSM}
+    
+    \subsubsection{2014-2018}
+    
+    \begin{itemize}
+        \item Trabajo colaborativo con profesores y estudiantes.
+        \item Confección de guías de ejercicios.
+        \item Clases de ayudantía personalizadas.
+    \end{itemize}
+    
+    \subsection{Práctica Profesional en Ingeap, Hijuelas}
+    
+    \subsubsection{Verano 2012-2013}
+    
+    \begin{itemize}
+        \item Armado de tableros eléctricos de alta tensión.
+        \item Limpieza y mantenimiento de tableros de control en planta Cemento Melón, La Calera.
+    \end{itemize}
+    
+    \end{minipage}}\\
+    \vspace*{0.5cm}\\
+    \hspace*{0.3cm}
+    \ovalbox{\begin{minipage}[t]{\textwidth}
+    \section{\textcolor{color-school}{\faSchool}\quad Educación}
+    
+    \subsection{Superior}
+    
+    \subsubsection{2013-Presente}
+    
+    \quad\textbf{Ingeniería Civil Electrónica}, Universidad Técnica Federico Santa María, Casa Central, Valparaíso.\\
+    
+    \subsection{Media}
+    
+    \subsubsection{2009-2012}
+    
+    \quad\textbf{Técnico  Nivel  Medio  en  Electrónica},  Escuela  Industrial  Ernesto  Bertelsen Temple, Fundación Diego Echeverría Castro, Quillota.\\
+    
+    %\subsection{Básica}
+    
+    %\subsubsection{2005-2008}
+    
+    %Escuela Industrial Ernesto Bertelsen Temple, Fundación Diego Echeverría Castro, Quillota.\\
+    
+    %\subsubsection{2001-2004}
+    
+    %Escuela República de México E-161, Quillota.
+    \vspace*{0.2cm}
+    \end{minipage}}
+\end{minipage}
+\hspace*{1cm}
+\begin{minipage}[t]{0.4\textwidth}
+    \ovalbox{\begin{minipage}[t]{\textwidth}
+    
+    \section{\textcolor{color-lightbulb}{\faLightbulb[regular]}\quad Habilidades}
+    \begin{center}
+    \begin{itemize*}
+        \item[] \ovalbox{\LARGE{\LaTeX}}\,\,\,\,
+        \item[] \ovalbox{\LARGE{\faGit}}\,\,\,\,
+        \item[] \ovalbox{\large{\textsc{Matlab}}}\,\,\,\,
+        \item[] \begin{minipage}{45pt}\includegraphics[width=35pt]{qt.png}\end{minipage}
+    \end{itemize*}\\
+    \vspace*{0.5cm}
+    \begin{itemize*}
+        \item[] \ovalbox{\Large{\faLinux} Linux}\,\,\,\,
+        \item[] \ovalbox{\large{\textcolor{blue}{\Large{\faWindows}}} Windows}\,\,\,\,
+    \end{itemize*}
+    \end{center}
+    \vspace*{0.1cm}
+    \end{minipage}}\\
+    \vspace*{0.5cm}\\
+    \ovalbox{\begin{minipage}[t]{\textwidth}
+    
+    \section{\faCode\quad Lenguajes}
+    \begin{center}
+    \begin{itemize*}
+        \item[] \ovalbox{\LARGE{\faCuttlefish/\faCuttlefish++}}\,\,\,\,
+        \item[] \ovalbox{\Large{\textbf{Python}}}\,\,\,\,
+    \end{itemize*}\\
+    \vspace*{0.5cm}
+    \begin{itemize*}
+        \item[] \ovalbox{\Large{Java}}\,\,\,\,
+    \end{itemize*}
+    \end{center}
+    \vspace*{0.2cm}
+    \end{minipage}}\\
+    \vspace*{0.5cm}\\
+    \ovalbox{\begin{minipage}[t]{\textwidth}
+    
+    \section{\faLink\quad Fortalezas}
+    \begin{large}
+    \begin{itemize}
+        \item[\faHourglassHalf] Rápido aprendizaje
+        \item[{\faComments[regular]}] Inglés fluido, escrito y hablado
+        \item[\faChild] Autodidacta y proactivo
+        \item[\faRandom] Flexibilidad horaria de trabajo
+    \end{itemize}
+    \end{large}
+    \vspace*{0.2cm}
+    \end{minipage}}
+\end{minipage}
+\end{document}
